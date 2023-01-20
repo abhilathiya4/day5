@@ -2,28 +2,26 @@
 #include<conio.h>
 
 main(){
-	int a;
-	int b;
-	int c;
 
+	int a;
+	int k;
 	clrscr();
 
 	printf("enter value of A:  ");
 	scanf("%d",&a);
 
-	printf("enter value of B: ");
-	scanf("%d",&b);
+	printf("enter value of K:  ");
+	scanf("%d",&k);
+	a=a+k;
+	k=a-k;
+	a=a-k;
 
-	c=a;
-	a=b;
-	b=c;
+	printf("value of A after:   %d\n",a);
 
-	printf("value of A after swap:  %d\n",a);
-	printf("value of B after swap:  %d",b);
+	printf("value of K after:   %d",k);
+
 
 	getch();
-
-
 
 
 }
